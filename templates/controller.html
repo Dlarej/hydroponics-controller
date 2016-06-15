@@ -1,0 +1,30 @@
+<div class="text-center">
+  <h1>Welcome to the Controller!</h1>
+</div>
+
+<br>
+
+<form action="/controller" method="POST">
+
+  <fieldset>
+  Temperature (currently {{ params['temp'] }}): <br>
+    <input type="text" name="temp" placeholder="New Temperature" required><br><br>
+  Lights (currently {{ params['light'] }}): <br>
+    <input type="radio" name="light" value="On" checked><label for="on">On</label><br>
+    <input type="radio" name="light" value="Off"><label for="off">Off</label><br>
+    <br>
+  Dehumidifier (currently {{ params['humid'] }}): <br>
+    <input type="radio" name="humid" value="On" checked><label for="on">On</label><br>
+    <input type="radio" name="humid" value="Off"><label for="off">Off</label><br>
+    <br>
+  Fan (currently {{ params['fan'] }}): <br>
+    <input type="radio" name="fan" value="On" checked><label for="on">On</label><br>
+    <input type="radio" name="fan" value="Off"><label for="off">Off</label><br>
+    <br>
+
+  <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+<br>
+<hr>
