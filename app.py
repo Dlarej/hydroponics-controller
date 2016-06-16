@@ -11,7 +11,7 @@ def index():
 @app.route('/monitor', methods=['GET'])
 def monitor():
     params = get_monitor_params()
-    return render_tamplate("monitor.html", params=params)
+    return render_template("monitor.html", params=params)
 
 @app.route('/controller', methods=['GET','POST'])
 def controller():

@@ -2,4 +2,13 @@
   <h1>Welcome to the Monitor!</h1>
 </div>
 
+{% if params is defined %}
+  {% for key, value in params.iteritems() %}
+    {{ key }}: {{ value }} <br>
+  {% endfor %}
+{% endif %}
+
+Video stream:<br>
+
+
 <hr>
